@@ -13,9 +13,8 @@ def nyc_pigeon_organizer(data)
         end
 
         result[names][key] << key2.to_s
-          end
         end
       end
     end
-result
+    result
 end
