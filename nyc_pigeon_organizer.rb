@@ -6,7 +6,10 @@ def nyc_pigeon_organizer(data)
       names.each do |names|
         if !result[names]
           result[names] = {}
-        else 
+        end
+
+        if result[names]
+          result[names][key] = [key2]
 
     end
   end
