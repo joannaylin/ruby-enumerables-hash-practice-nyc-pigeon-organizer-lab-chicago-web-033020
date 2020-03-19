@@ -9,7 +9,10 @@ def nyc_pigeon_organizer(data)
         end
 
         if result[names]
-          result[names][key] = [key2]
+          result[names][key] = []
+        end
+
+        result[names][key] << key2.to_s
 
     end
   end
