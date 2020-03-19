@@ -1,18 +1,18 @@
 def nyc_pigeon_organizer(data)
   # write your code here!
   result = { }
-  data.each do |key, value| #runs through outer hash through all keys and values. values are hashes..
-    value.each do |key2, names|
+  data.each do |attribute, value| #runs through outer hash through all keys and values. values are hashes..
+    value.each do |key, names|
       names.each do |names|
         if !result[names]
           result[names] = {}
         end
 
         if result[names]
-          result[names][key] = []
+          result[names][attribute] = []
         end
 
-        result[names][key] << key2.to_s
+        result[names][attribute] << key.to_s
         end
       end
     end
